@@ -17,31 +17,48 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(16),
-      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            title,
-            style: Theme.of(context).textTheme.titleMedium,
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20.0,
+            ),
+            child: Text(
+              title,
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
           ),
-          Text(
-            "$price\$",
-            style: Theme.of(context).textTheme.titleSmall,
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20.0,
+            ),
+            child: Text(
+              "Price $price\$",
+              style: Theme.of(context).textTheme.titleSmall,
+            ),
           ),
           const SizedBox(
             height: 5,
           ),
-          Center(
-            child: Image.asset(
-              image,
-              height: 170,
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.horizontal(
+                left: Radius.circular(5),
+                right: Radius.circular(5),
+              ),
+              image: DecorationImage(
+                image: AssetImage(image),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              ),
             ),
-          ),
+          )
         ],
       ),
     );

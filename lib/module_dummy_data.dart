@@ -4,7 +4,7 @@
 final products = [
   {
     'id': '1',
-    'title': 'Burger',
+    'title': 'Fresh Burger',
     'item': 'Burger',
     'price': 10.5,
     'sizes': [1, 5, 9, 12],
@@ -12,7 +12,7 @@ final products = [
   },
   {
     'id': '2',
-    'title': 'Pizza',
+    'title': 'Fresh Pizza',
     'item': 'Pizza',
     'price': 10.2,
     'sizes': [1, 5, 9, 12],
@@ -20,7 +20,7 @@ final products = [
   },
   {
     'id': '3',
-    'title': 'Shwarma',
+    'title': 'Fresh Shwarma',
     'item': 'Shwarma',
     'price': 11.5,
     'sizes': [1, 5, 10],
@@ -28,7 +28,7 @@ final products = [
   },
   {
     'id': '4',
-    'title': 'Burger',
+    'title': 'Fresh Burger',
     'item': 'Burger',
     'price': 10.5,
     'sizes': [1, 5, 9, 12],
@@ -36,7 +36,7 @@ final products = [
   },
   {
     'id': '5',
-    'title': 'Pizza',
+    'title': 'Fresh Pizza',
     'item': 'Pizza',
     'price': 10.8,
     'sizes': [1, 5, 9, 12],
@@ -44,7 +44,7 @@ final products = [
   },
   {
     'id': '6',
-    'title': 'Shwarma',
+    'title': 'Fresh Shwarma',
     'item': 'Shwarma',
     'price': 11.5,
     'sizes': [1, 5, 10],
@@ -55,7 +55,7 @@ final products = [
 final cart = [
   {
     'id': '7',
-    'title': 'Shwarma',
+    'title': 'Fresh Shwarma',
     'item': 'Shwarma',
     'price': 11.5,
     'sizes': 10,
