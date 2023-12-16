@@ -21,9 +21,29 @@ class MyApp extends StatelessWidget {
 
         /// Giving Color to Our App
         colorScheme: ColorScheme.fromSeed(
+          primary: const Color.fromRGBO(254, 206, 1, 1),
+          secondary: const Color.fromRGBO(254, 206, 1, 1),
           seedColor: const Color.fromRGBO(254, 206, 1, 1),
         ),
         useMaterial3: true,
+
+        /// I setting hint style for my all pages
+        inputDecorationTheme: const InputDecorationTheme(
+          hintStyle: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+          prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
+        ),
+
+        /// textTheme
+        textTheme: const TextTheme(
+          titleMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          titleSmall: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       home: const HomePage(),
     );
