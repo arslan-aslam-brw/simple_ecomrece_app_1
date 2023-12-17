@@ -39,10 +39,11 @@ class MyApp extends StatelessWidget {
         /// textTheme
         textTheme: const TextTheme(
           titleMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          titleSmall: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
+          titleSmall: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          titleLarge: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+        ),
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
         ),
       ),
       home: const HomePage(),

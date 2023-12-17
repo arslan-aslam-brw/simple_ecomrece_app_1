@@ -24,6 +24,20 @@ class ProductCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.horizontal(
+                left: Radius.circular(5),
+                right: Radius.circular(5),
+              ),
+              image: DecorationImage(
+                image: AssetImage(image),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              ),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 20.0,
@@ -42,23 +56,6 @@ class ProductCard extends StatelessWidget {
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
-          const SizedBox(
-            height: 5,
-          ),
-          Container(
-            height: 200,
-            decoration: BoxDecoration(
-              borderRadius: const BorderRadius.horizontal(
-                left: Radius.circular(5),
-                right: Radius.circular(5),
-              ),
-              image: DecorationImage(
-                image: AssetImage(image),
-                fit: BoxFit.cover,
-                alignment: Alignment.center,
-              ),
-            ),
-          )
         ],
       ),
     );
