@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
@@ -32,7 +35,10 @@ class ProductCard extends StatelessWidget {
                 right: Radius.circular(5),
               ),
               image: DecorationImage(
-                image: AssetImage(image),
+                /// if image in mobile, or web, for web, we use ImageNetwork
+                image: kIsWeb
+                    ? NetworkImage(image)
+                    : AssetImage(image) as ImageProvider<Object>,
                 fit: BoxFit.cover,
                 alignment: Alignment.center,
               ),

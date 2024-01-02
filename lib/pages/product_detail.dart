@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'dart:io';
 
 class ProductDetailScreen extends StatefulWidget {
   final Map<String, Object> product;
@@ -42,7 +44,12 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               height: 170,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage(widget.product['imageUrl'] as String),
+
+                    /// if image in mobile, or web, for web, we use ImageNetwork
+                    image: kIsWeb
+                        ? NetworkImage(widget.product['imageUrl'] as String)
+                        : AssetImage(widget.product['imageUrl'] as String)
+                            as ImageProvider<Object>,
                     fit: BoxFit.cover,
                     alignment: Alignment.center),
                 borderRadius: BorderRadius.circular(16),

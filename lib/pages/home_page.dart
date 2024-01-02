@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:simple_ecomrece_app_1/items_container.dart';
-import 'package:simple_ecomrece_app_1/module_dummy_data.dart';
-import 'package:simple_ecomrece_app_1/product_detail.dart';
+import 'package:simple_ecomrece_app_1/widgets/items_container.dart';
+import 'package:simple_ecomrece_app_1/widgets/module_dummy_data.dart';
+import 'package:simple_ecomrece_app_1/pages/product_detail.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -158,25 +158,21 @@ class _HomePageState extends State<HomePage> {
       ),
 
       bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        selectedFontSize: 16.0,
-        unselectedFontSize: 16.0,
-        iconSize: 30,
+        iconSize: 25,
         backgroundColor: const Color.fromARGB(214, 202, 245, 234),
         items: [
           BottomNavigationBarItem(
               icon: const Icon(
                 Icons.home,
               ),
-              label: 'Home',
+              label: '',
               backgroundColor: Theme.of(context).colorScheme.primary),
-          BottomNavigationBarItem(
-              icon: const Icon(
+          const BottomNavigationBarItem(
+              icon: Icon(
                 Icons.shopping_cart,
               ),
-              label: 'Cart',
-              backgroundColor: Theme.of(context).colorScheme.primary),
+              label: '',
+              backgroundColor: Colors.white),
         ],
       ),
     );
