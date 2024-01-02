@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:io';
 
 class ProductDetailScreen extends StatefulWidget {
   final Map<String, Object> product;
