@@ -1,5 +1,6 @@
 /// This is Data of Items means Name, pics, price, id etc, like json file
 /// We use it to fetch data from there
+library;
 
 final products = [
   {

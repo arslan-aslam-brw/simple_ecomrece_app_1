@@ -3,14 +3,14 @@ import 'package:simple_ecomrece_app_1/widgets/items_container.dart';
 import 'package:simple_ecomrece_app_1/widgets/module_dummy_data.dart';
 import 'package:simple_ecomrece_app_1/pages/product_detail.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class HomePageProduct extends StatefulWidget {
+  const HomePageProduct({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomePageProduct> createState() => _HomePageProductState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageProductState extends State<HomePageProduct> {
   /// Creating list of menu items in array
   final List<String> filters = const ['All', 'Pizza', 'Burger', 'Shwarma'];
 
@@ -155,25 +155,6 @@ class _HomePageState extends State<HomePage> {
             )
           ],
         ),
-      ),
-
-      bottomNavigationBar: BottomNavigationBar(
-        iconSize: 25,
-        backgroundColor: const Color.fromARGB(214, 202, 245, 234),
-        items: [
-          BottomNavigationBarItem(
-              icon: const Icon(
-                Icons.home,
-              ),
-              label: '',
-              backgroundColor: Theme.of(context).colorScheme.primary),
-          const BottomNavigationBarItem(
-              icon: Icon(
-                Icons.shopping_cart,
-              ),
-              label: '',
-              backgroundColor: Colors.white),
-        ],
       ),
     );
   }
