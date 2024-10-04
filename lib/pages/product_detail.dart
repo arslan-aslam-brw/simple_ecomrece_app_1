@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:simple_ecomrece_app_1/widgets/cart_provider.dart';
 
 class ProductDetailScreen extends StatefulWidget {
   final Map<String, Object> product;
@@ -15,6 +17,47 @@ class ProductDetailScreen extends StatefulWidget {
 
 class _ProductDetailScreenState extends State<ProductDetailScreen> {
   int isSelectSize = 0;
+
+  /// we use condition and calling provider stored instance from CartProvider Class
+  void onTap() {
+    if (isSelectSize != 0) {
+      Provider.of<CartProvider>(context, listen: false).addProduct({
+        'id': widget.product['id'],
+        'title': widget.product['title'],
+        'item': widget.product['item'],
+        'price': widget.product['price'],
+        'imageUrl': widget.product['imageUrl'],
+        'quantity': isSelectSize,
+      });
+
+      /// This is is like a Notification message on Screen
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            "Item Added To Cart",
+            style: TextStyle(color: Colors.white),
+          ),
+          elevation: 5.0,
+          duration: Durations.long4,
+          padding: EdgeInsets.all(10),
+          backgroundColor: Colors.cyan,
+        ),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            "Please Select Item",
+            style: TextStyle(color: Colors.white),
+          ),
+          elevation: 5.0,
+          duration: Durations.long4,
+          padding: EdgeInsets.all(10),
+          backgroundColor: Colors.cyan,
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -75,10 +118,10 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   height: 70,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: (widget.product['sizes'] as List<int>).length,
+                    itemCount: (widget.product['quantity'] as List<int>).length,
                     itemBuilder: (context, index) {
                       final size =
-                          (widget.product['sizes'] as List<int>)[index];
+                          (widget.product['quantity'] as List<int>)[index];
                       return GestureDetector(
                         onTap: () {
                           setState(() {
@@ -109,7 +152,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         ),
                         minimumSize: const MaterialStatePropertyAll(
                             Size(double.infinity, 40))),
-                    onPressed: () {},
+                    onPressed: () {
+                      /// here we calling provider, cartProvider function for when press button
+                      ///  details move to another screen, page.
+                      onTap();
+                    },
                     icon: const Icon(
                       Icons.shopping_cart,
                       color: Colors.black,

@@ -8,7 +8,7 @@ final products = [
     'title': 'Fresh Burger',
     'item': 'Burger',
     'price': 10.5,
-    'sizes': [1, 5, 9, 12],
+    'quantity': [1, 2, 4, 6, 8, 10],
     'imageUrl': "assets/images/burger_one.jpg",
   },
   {
@@ -16,7 +16,7 @@ final products = [
     'title': 'Fresh Pizza',
     'item': 'Pizza',
     'price': 10.2,
-    'sizes': [1, 5, 9, 12],
+    'quantity': [1, 2, 4, 6, 8, 10],
     'imageUrl': 'assets/images/pizza_one.jpg',
   },
   {
@@ -24,7 +24,7 @@ final products = [
     'title': 'Fresh Shwarma',
     'item': 'Shwarma',
     'price': 11.5,
-    'sizes': [1, 5, 10],
+    'quantity': [1, 2, 4, 6, 8, 10],
     'imageUrl': 'assets/images/shwarma_one.jpg'
   },
   {
@@ -32,7 +32,7 @@ final products = [
     'title': 'Fresh Burger',
     'item': 'Burger',
     'price': 10.5,
-    'sizes': [1, 5, 9, 12],
+    'quantity': [1, 2, 4, 6, 8, 10],
     'imageUrl': "assets/images/burger_two.jpg",
   },
   {
@@ -40,7 +40,7 @@ final products = [
     'title': 'Fresh Pizza',
     'item': 'Pizza',
     'price': 10.8,
-    'sizes': [1, 5, 9, 12],
+    'quantity': [1, 2, 4, 6, 8, 10],
     'imageUrl': 'assets/images/pizza_two.jpg',
   },
   {
@@ -48,18 +48,7 @@ final products = [
     'title': 'Fresh Shwarma',
     'item': 'Shwarma',
     'price': 11.5,
-    'sizes': [1, 5, 10],
+    'quantity': [1, 2, 4, 6, 8, 10],
     'imageUrl': 'assets/images/shwarma_two.jpg'
   },
-];
-
-final cart = [
-  {
-    'id': '7',
-    'title': 'Fresh Shwarma',
-    'item': 'Shwarma',
-    'price': 11.5,
-    'sizes': 10,
-    'imageUrl': 'assets/images/shwarma_two.jpg'
-  }
 ];

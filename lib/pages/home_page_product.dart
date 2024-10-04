@@ -79,7 +79,9 @@ class _HomePageProductState extends State<HomePageProduct> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   /// storing items of array in variable for later use
+
                   final filter = filters[index];
+
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
 
@@ -87,11 +89,13 @@ class _HomePageProductState extends State<HomePageProduct> {
                     /// used for taping, on ever where, more usefull for taping on things
                     child: GestureDetector(
                       onTap: () {
-                        setState(() {
-                          /// passing or assining selectedFilter to all array items
-                          /// like menu functionality
-                          selectedFilters = filter;
-                        });
+                        setState(
+                          () {
+                            /// passing or assining selectedFilter to all array items
+                            /// like menu functionality
+                            selectedFilters = filter;
+                          },
+                        );
                       },
 
                       /// Chip widget is mostly used for labling, custome labels,
