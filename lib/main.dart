@@ -20,8 +20,10 @@ class MyApp extends StatelessWidget {
     /// validation, some conditions etc.
 
     /// we using provider
-    return ChangeNotifierProvider(
-      create: (context) => CartProvider(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => CartProvider()),
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
 
@@ -32,9 +34,9 @@ class MyApp extends StatelessWidget {
 
           /// Giving Color to Our App
           colorScheme: ColorScheme.fromSeed(
-            primary: const Color.fromRGBO(254, 206, 1, 1),
-            secondary: const Color.fromRGBO(254, 206, 1, 1),
-            seedColor: const Color.fromRGBO(254, 206, 1, 1),
+            primary: const Color.fromRGBO(69, 191, 8, 1),
+            secondary: const Color.fromRGBO(69, 191, 8, 1),
+            seedColor: const Color.fromRGBO(69, 191, 8, 1),
           ),
           useMaterial3: true,
 
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
-            prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
+            prefixIconColor: Color.fromRGBO(69, 191, 8, 1),
           ),
 
           /// textTheme

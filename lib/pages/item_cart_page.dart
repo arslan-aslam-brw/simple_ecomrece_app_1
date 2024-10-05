@@ -8,7 +8,10 @@ class CartItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// calling provider instance that is we used to store data
-    final cart = Provider.of<CartProvider>(context).cart;
+    /// final cart = Provider.of<CartProvider>(context).cart;
+
+    /// we can aslo use this code for shorten and easy
+    final cart = context.watch<CartProvider>().cart;
 
     return Scaffold(
         appBar: AppBar(

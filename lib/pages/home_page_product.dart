@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_ecomrece_app_1/widgets/items_container.dart';
-import 'package:simple_ecomrece_app_1/widgets/module_dummy_data.dart';
-import 'package:simple_ecomrece_app_1/pages/product_detail.dart';
+import 'package:simple_ecomrece_app_1/pages/layout_is_web.dart';
 
 class HomePageProduct extends StatefulWidget {
   const HomePageProduct({super.key});
@@ -123,39 +121,8 @@ class _HomePageProductState extends State<HomePageProduct> {
 
             /// I used Expanding, because I want to show it on remaing full screen
             /// Because I not have plan or have any other thing aafter that so I use it
-            Expanded(
-              child: ListView.builder(
-                itemCount: products.length,
-                scrollDirection: Axis.vertical,
-                itemBuilder: (context, index) {
-                  final product = products[index];
-
-                  /// calling my created seprated widget with full created widget of container
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ProductDetailScreen(
-                          product: products[index],
-                        ),
-                      ));
-                    },
-                    child: ProductCard(
-                      /// caling constructor of my created widget
-                      title: product['title'] as String,
-
-                      /// fetching data from my created dummyData class like as fetch from jsonFile
-                      /// or web API
-                      price: product['price'] as double,
-                      image: product['imageUrl'] as String,
-
-                      /// Changing color of every widget
-                      backgroundColor: index.isEven
-                          ? const Color.fromRGBO(216, 240, 253, 1)
-                          : const Color.fromARGB(255, 149, 151, 152),
-                    ),
-                  );
-                },
-              ),
+            const Expanded(
+              child: LayoutForWeb(),
             )
           ],
         ),

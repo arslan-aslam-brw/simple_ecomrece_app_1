@@ -21,7 +21,9 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
   /// we use condition and calling provider stored instance from CartProvider Class
   void onTap() {
     if (isSelectSize != 0) {
-      Provider.of<CartProvider>(context, listen: false).addProduct({
+      /// using provider
+      /// Provider.of<CartProvider>(context, listen: false).addProduct( we can use this in shorten also
+      context.read<CartProvider>().addProduct({
         'id': widget.product['id'],
         'title': widget.product['title'],
         'item': widget.product['item'],
@@ -83,7 +85,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Container(
-              height: 170,
+              height: 230,
+              width: 230,
               decoration: BoxDecoration(
                 image: DecorationImage(
 
@@ -150,8 +153,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         backgroundColor: MaterialStatePropertyAll(
                           Theme.of(context).primaryColor,
                         ),
-                        minimumSize: const MaterialStatePropertyAll(
-                            Size(double.infinity, 40))),
+                        fixedSize:
+                            const MaterialStatePropertyAll(Size(350, 50))),
                     onPressed: () {
                       /// here we calling provider, cartProvider function for when press button
                       ///  details move to another screen, page.
