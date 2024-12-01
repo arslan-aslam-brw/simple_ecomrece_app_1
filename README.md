@@ -9,7 +9,7 @@ Hi, this is a Simple e-Comrence App for Mobiles. I create this App using Flutter
 
 <img align="center"  width="600" height="600" src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png"> 
 
-## Screenshots
+## Code Screenshot
 
 ![App Screenshot](https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png)
 
