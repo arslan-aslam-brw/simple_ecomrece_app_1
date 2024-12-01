@@ -6,13 +6,13 @@ Hi, this is a Simple e-Comrence App for Mobiles. I create this App using Flutter
 
 ## App Demo
 
-<img align="center"  width="1000" height="800" src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png">
+<img align="center"  width="400" height="400" src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png">
 
 
 
 ## Installation
 
-Just Download and Install by Clicking <a href = "https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/App.apk" >Here</a>
+Just Download and Install by Clicking <a href = "https://github.com/arslanaslam5588/simple_ecomrece_app_1/raw/refs/heads/master/assets/App.apk" >Here</a>
 
   
 ## Skills
