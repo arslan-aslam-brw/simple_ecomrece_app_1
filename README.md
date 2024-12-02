@@ -6,10 +6,17 @@ Hi, this is a Simple e-Comrence App for Mobiles. I create this App using Flutter
 
 ## App Screenshots
 
-![App Screenshot](https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png)
+<!--- ![App Screenshot](https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png)  --->
 
 
-
+<div style="overflow: auto;">
+    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Left Image" style="float: left; margin-right: 20px; width: 470px; "> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Right Image" style="float: right; margin-left: 20px; width: 470px;"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <br>
+      <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Left Image" style="float: left; margin-right: 20px; width: 470px; "> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Right Image" style="float: right; margin-left: 20px; width: 470px;"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+    
+  
+</div>
 
 ## Installation
 
