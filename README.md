@@ -1,5 +1,5 @@
 
-# Simple e-Comrece App
+# Simple E-commerce App
 
 Hi, this is a Simple e-Comrence App for Mobiles. I create this App using Flutter Framework. In this App I learn more about flutter, flutter widgets, UI Basics , Flutter State managment (Getx) and it's work. This is basic and beginner level App for basic purpose of knowledge and code practing.
 
