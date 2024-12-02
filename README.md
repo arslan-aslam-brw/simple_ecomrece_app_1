@@ -4,12 +4,15 @@
 Hi, this is a Simple e-Comrence App for Mobiles. I create this App using Flutter Framework. In this App I learn more about flutter, flutter widgets, UI Basics , Flutter State managment (Getx) and it's work. This is basic and beginner level App for basic purpose of knowledge and code practing.
 
 
-## App Screenshots
+## App Demo & Screenshots (Pagination)
 
-<!--- ![App Screenshot](https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png)  --->
+![App Screenshot](https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png) <br><br>
+
+
+
 <div style="overflow: auto;">
-    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Left Image" style="float: left; margin-right: 20px; width: 380px; "> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Right Image" style="float: right; margin-left: 20px; width: 380px;"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <br>
+    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/Demo_App.gif" alt="Left Image" style="float: left; margin-right: 20px; width: 380px; "> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+    <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/Demo_App.gif" alt="Right Image" style="float: right; margin-left: 20px; width: 380px;"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <br><br>
       <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Left Image" style="float: left; margin-right: 20px; width: 380px; "> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
     <img src="https://github.com/arslanaslam5588/simple_ecomrece_app_1/blob/master/assets/eComrence_scrnshot.png" alt="Right Image" style="float: right; margin-left: 20px; width: 380px;"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
 </div>
